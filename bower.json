@@ -1,0 +1,25 @@
+{
+  "name": "gigs.denverdevs.org",
+  "version": "1.0.0",
+  "author": "Henry Kaufman",
+  "description": "Gigs for Denver Devs",
+  "main": "index.js",
+  "authors": [
+    "Henry Kaufman"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Denver-Devs/gigs.denverdevs.org",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-resource": "^1.5.5"
+  }
+}
