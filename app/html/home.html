@@ -13,7 +13,7 @@
 <div class="search">
     <div class="search-inner">
         <h2>Search</h2>
-        <input type="text" placeholder="Job Title">
+        <input type="text" placeholder="Job Title" ng-model='searchText'>
     </div>
 </div>
 <div class="jobs">
@@ -25,8 +25,7 @@
             <span>Contract</span>
         </div>
         <div class="job-box">
-            <div class="job" ng-repeat='job in jobs'>
-                <h3>Job Title</h3>
+            <div class="job" ng-repeat='job in jobs | filter:searchText'>
                 <p>{{job.message.text}}</p>
                 <br>
                 <button><a ng-href="http://denver-devs.slack.com/messages/{{job.message.user}}">APPLY</a></button>
