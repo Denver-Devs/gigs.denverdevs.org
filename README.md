@@ -7,4 +7,8 @@
 3. Run `bower install`
 4. Make sure you have MongoDB running (`mongod`)
 5. Obtain a token from Slack
-6. Run `token=YOUR_TOKEN_HERE npm start`
+7. Put it into a `.env` file like the following:
+```
+token=YOUR_TOKEN_HERE
+```
+6. Run `npm start`

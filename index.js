@@ -1,6 +1,9 @@
 var express = require('express');
 var request = require('request');
 var config = require('./config.local.js');
+var env = require('node-env-file');
+
+env(__dirname + '/.env');
 
 var app = express();
 
